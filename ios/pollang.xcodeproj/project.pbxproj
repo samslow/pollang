@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* pollangTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* pollangTests.m */; };
-		022DA5D823F7C927006ACAC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 022DA5D723F7C927006ACAC7 /* GoogleService-Info.plist */; };
+		022DA5DA23FC17BD006ACAC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 022DA5D923FC17BC006ACAC7 /* GoogleService-Info.plist */; };
 		02A870B8C65DF60FCE9805E6 /* libPods-pollang-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 221DA595C6CCF238F6EB864C /* libPods-pollang-tvOS.a */; };
 		09393B8A229C943C4DC7C197 /* libPods-pollang-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D88B7114DA5B03951247428A /* libPods-pollang-tvOSTests.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
@@ -45,7 +45,7 @@
 		00E356EE1AD99517003FC87E /* pollangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pollangTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* pollangTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pollangTests.m; sourceTree = "<group>"; };
-		022DA5D723F7C927006ACAC7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		022DA5D923FC17BC006ACAC7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0B20FD4EE249A5E59AF2ACFD /* Pods-pollang-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pollang-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-pollang-tvOS/Pods-pollang-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* pollang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pollang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = pollang/AppDelegate.h; sourceTree = "<group>"; };
@@ -200,7 +200,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				022DA5D723F7C927006ACAC7 /* GoogleService-Info.plist */,
+				022DA5D923FC17BC006ACAC7 /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* pollang */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* pollangTests */,
@@ -334,7 +334,11 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 888D8235VJ;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 888D8235VJ;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -383,7 +387,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				022DA5D823F7C927006ACAC7 /* GoogleService-Info.plist in Resources */,
+				022DA5DA23FC17BD006ACAC7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,6 +693,7 @@
 			baseConfigurationReference = 8AAE895A965645C4080F2DA3 /* Pods-pollangTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 888D8235VJ;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -713,6 +718,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 888D8235VJ;
 				INFOPLIST_FILE = pollangTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -734,6 +740,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 888D8235VJ;
 				INFOPLIST_FILE = pollang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -753,6 +760,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 888D8235VJ;
 				INFOPLIST_FILE = pollang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
