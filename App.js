@@ -1,16 +1,13 @@
 import React from "react";
-import { View, Text, Button } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 
-import GeneratePoll from "screens/GeneratePoll/GeneratePoll";
-import PollList from "screens/PollList/PollList";
-import Mypage from "screens/Mypage/MyPage";
+import PollListStack from "screens/PollListStack/PollListStack";
+import GeneratePoll from "stacks/GeneratePoll/GeneratePoll";
+import Mypage from "stacks/Mypage/MyPage";
 
-const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
 const App = () => {
@@ -30,7 +27,7 @@ const App = () => {
         />
         <Tab.Screen
           name="pollList"
-          component={PollList}
+          component={PollListStack}
           options={{
             tabBarLabel: "투표 목록",
             tabBarIcon: ({ color, size }) => (
