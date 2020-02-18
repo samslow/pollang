@@ -1,8 +1,8 @@
 const ColorPallet = {
   bg: "#e0e5ec",
-  text: "#555",
+  text: "#777",
   voting: "#4A4",
-  beforeVoting: "#DC4",
+  beforeVoting: "#ffae42",
   afterVoting: "#888",
 };
 export default ColorPallet;
