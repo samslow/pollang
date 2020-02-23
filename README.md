@@ -1,6 +1,15 @@
 # pollang
 React Native 투표 앱 
 
+# 설치 및 구동
+```shell
+$ git clone https://github.com/samslow/pollang
+$ cd pollang
+$ yarn
+$ cd ios && pod intall && cd ..
+$ yarn start
+```
+
 # 사용자 스토리
 
 - [x] 사용자는 투표를 생성할 수 있어야 한다 투표 생성자는 제목을 입력할 수 있어야 한다
