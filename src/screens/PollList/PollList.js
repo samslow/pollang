@@ -15,7 +15,7 @@ import FooterPoll from 'components/PollItem/FooterPoll';
 import PollPlaceHolder from 'components/PollItem/PlaceHolder';
 
 const PollList = ({RootStore}) => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [refreshing, setRefreshing] = useState(false);
   const pollListRef = useRef();
   const PollListStore = RootStore.PollListStore;
@@ -43,8 +43,6 @@ const PollList = ({RootStore}) => {
     React.useCallback(() => {
       console.log('focused');
       handleRefresh();
-
-      return;
     }, []),
   );
 
@@ -79,8 +77,6 @@ const PollList = ({RootStore}) => {
         await AsyncStorage.setItem('userName', 'Anonymous');
       }
     }
-    // console.log(await AsyncStorage.getItem('userId'));
-    // await AsyncStorage.removeItem('userId');
   };
 
   const getPollList = async () => {
@@ -115,6 +111,7 @@ const PollList = ({RootStore}) => {
 
   const scrollUp = ref => {
     ref.current.scrollToOffset({animated: true, offset: 0});
+    handleRefresh();
   };
 
   const handleRefresh = () => {
